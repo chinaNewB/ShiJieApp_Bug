@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:id="@+id/video_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_local_net"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_local_net"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_local_net_parent"
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/btn_local"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_local_purple"
+                android:text="Local"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_net"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/btn_net_white"
+                android:text="Net"
+                android:textColor="@color/colorPurple"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.scalified.fab.ActionButton
+        android:id="@+id/flow_net_video_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_local_net"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="36dp"
+        android:alpha=".8"
+        fab:button_color="@color/fab_material_light_blue_500"
+        fab:button_colorPressed="@color/fab_material_blue_500"
+        fab:image="@drawable/fab_plus_icon"
+        fab:rippleEffect_enabled="true"
+        fab:type="DEFAULT" />
+
+
+</RelativeLayout>

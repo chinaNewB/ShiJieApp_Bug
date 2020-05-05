@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_tx"/>
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:realtimeBlurRadius="11dp"
+        app:realtimeOverlayColor="@color/color_blur" />
+
+
+    <me.wangyuwei.particleview.ParticleView
+        android:id="@+id/mParticleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        pv:pv_background_color="@color/colorWhite"
+        pv:pv_host_text="欢迎"
+        pv:pv_host_text_anim_time="1000"
+        pv:pv_host_text_size="54sp"
+        pv:pv_particle_text="视界"
+        pv:pv_particle_text_size="24sp"
+        pv:pv_spread_anim_time="500"
+        pv:pv_text_anim_time="1500"
+        pv:pv_text_color="@color/colorBlue" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/transparent"
+        android:textColor="@color/colorBlue"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

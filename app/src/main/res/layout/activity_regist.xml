@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/regist_etv_phone"
+            style="@style/RegisteEditText"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:maxLength="12"
+            android:inputType="number" />
+
+
+        <EditText
+            android:id="@+id/regist_etv_pwd"
+            style="@style/RegisteEditText"
+            android:layout_alignLeft="@+id/regist_etv_phone"
+            android:layout_below="@+id/regist_etv_phone"
+            android:inputType="textPassword"
+            android:digits="@string/input_strict"/>
+
+        <EditText
+            android:id="@+id/regist_etv_pwd_again"
+            style="@style/RegisteEditText"
+            android:layout_alignLeft="@+id/regist_etv_phone"
+            android:layout_below="@+id/regist_etv_pwd"
+            android:inputType="textPassword"
+            android:digits="@string/input_strict"/>
+
+        <Button
+            android:id="@+id/regist"
+            style="@style/RegisteEditText"
+            android:layout_alignLeft="@+id/regist_etv_pwd"
+            android:layout_below="@+id/regist_etv_pwd_again"
+            android:text="注册" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/close_regist"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="40sp"
+        android:background="@mipmap/close"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/regist_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:padding="15dp"
+        android:text="视 界"/>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_local_video_item_rl"
+        android:padding="1dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/video_image"
+            android:layout_width="240dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bg_tx"
+            app:riv_corner_radius="8dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"
+            app:riv_tile_mode="clamp" />
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/video_image"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_local_video_item"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/video_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="1dp"
+                android:layout_height="9dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/video_time"
+                android:background="@color/colorWhite" />
+
+
+            <TextView
+                android:id="@+id/video_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/line"
+                android:layout_weight="1"
+                android:text="6.66MB"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/video_time"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:ellipsize="middle"
+                android:maxEms="6"
+                android:text="视频名字视频名字视频名字视频名字视频名字视频名字视频名字视频名字"
+                android:textColor="@color/colorGrayAD"
+                android:textSize="12sp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignTop="@id/video_time"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/item_start" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

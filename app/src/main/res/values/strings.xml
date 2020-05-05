@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">视界</string>
+    <string name="drawer_open">draw_open</string>
+    <string name="drawer_close">draw_close</string>
+    <string name="signature">女为悦己者容，士为知己者死。</string>
+    <string name="input_strict">0123456789ABCDEFGHIJKLMNNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</string>
+    <string name="text_login_hint_phone">请输入手机号码</string>
+    <string name="text_login_hint_pwd">请输入密码</string>
+    <string name="text_phone_not_null">账号不能为空</string>
+    <string name="text_password_not_null">密码不能为空</string>
+    <string name="net_video_url">http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4</string>
+    <string name="text_network_error_tips">网络出错. 请点击重试..</string>
+    <string name="text_loading_tips">玩命加载中...</string>
+
+    <string-array name="menu_item_title">
+        <item>首页</item>
+        <item>记录</item>
+        <item>赞赏</item>
+        <item>设置</item>
+        <item>退出</item>
+    </string-array>
+</resources>

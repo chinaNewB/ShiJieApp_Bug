@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/txbj"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@mipmap/bg_tx" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:lines="2"
+        android:maxEms="6"
+        android:text="@string/signature"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:elevation="15dp"
+        android:src="@mipmap/img_tx"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/user_img"
+        android:layout_toRightOf="@+id/user_img"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:maxEms="6"
+        android:maxLines="2"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="我的昵称"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/menuList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorWhite"
+        android:layout_below="@+id/user_img" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="180dp"
+        android:layout_height="240dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="20dp"
+        android:paddingTop="60dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/gif_hand_run" />
+</RelativeLayout>

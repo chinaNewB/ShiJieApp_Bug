@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="实打实" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/pull_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_id">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_net_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:overScrollMode="never" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

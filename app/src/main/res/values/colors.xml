@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--theme-->
+    <color name="colorPrimary">#A053F0</color>
+    <color name="colorPrimaryDark">#A053F0</color>
+    <color name="colorAccent">#A053F0</color>
+
+    <color name="colorPurple">#A053F0</color>
+    <color name="colorPurple70">#B2A053F0</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBlue">#1B7FFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorBlack70">#B2000000</color>
+    <color name="colorGray">#EEEEEE</color>
+    <color name="colorGrayAD">#ADADAD</color>
+    <color name="colorGrayDark">#AA797979</color>
+
+
+    <!--toast-->
+    <color name="colorToastError">#FF4848</color>
+    <color name="colorToastSuccess">#65C56B</color>
+    <color name="colorToastWarn">#FF9148</color>
+    <color name="colorToastInfo">#48AAFF</color>
+
+    <color name="color_etv_bg">#E8B8B8B8</color>
+    <color name="color_blur">#B3FFFFFF</color>
+
+    <color name="transparent">#00ffffff</color>
+</resources>
